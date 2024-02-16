@@ -71,6 +71,7 @@ function HomePage() {
       .then((imageInfo) => {
         // Updating the list of uploaded images
         setUploadedImages((prevImages) => [...prevImages, imageInfo]);
+        alert('Image uploaded successfully')
       })
       .catch((error) => {
         console.error('Error uploading image:', error);
